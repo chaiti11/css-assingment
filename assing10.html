@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images Example</title>
+    <link rel="stylesheet" href="styles10.css">
+</head>
+<body>
+
+    <header>
+        <h1>Responsive Image </h1>
+        <h2>Resize the browser window to load different images.</h2>
+    </header>
+
+    <section class="image-container">
+        <!-- Responsive image using srcset -->
+        <picture>
+            
+            <source media="(min-width:650px)" srcset="white_flower.jpg">
+            <source media="(min-width:465px)" srcset="pink_flower.jpg">
+            <img src="flower.jpg" alt="Flowers"style="width:auto;" >
+          </picture>
+    </section>
+
+</body>
+</html>

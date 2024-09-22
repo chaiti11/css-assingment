@@ -1,0 +1,112 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(45deg, #ff7f50, #6a5acd);
+}
+
+header {
+    background: linear-gradient(45deg, #ff507c, #f8f4f4);
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+div {
+    margin: 20px auto;
+    padding: 20px;
+    width: 200px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Fade In Animation */
+.fade-box {
+    background-color: #f86058;
+    opacity: 0;
+    animation: fadeIn 5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Bounce Animation */
+.bounce-box {
+    background-color: #9fe1b7;
+    animation: bounce 5s ease infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Rotate Animation */
+.rotate-box {
+    background-color: #c75072;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Slide In Animation */
+.slide-box {
+    background-color: #9b59b6;
+    transform: translateX(-100%);
+    animation: slideIn 8s ease-out forwards;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Pulsate Animation */
+.pulsate-box {
+    background-color: #6d22e6;
+    animation: pulsate 1s ease-in-out infinite;
+}
+
+@keyframes pulsate {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}

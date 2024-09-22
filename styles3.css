@@ -1,0 +1,136 @@
+/* Global body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Heading styles */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.gradient-section {
+    background: linear-gradient(45deg, #ff7f50, #6a5acd);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+/* Section styles */
+section {
+    margin-bottom: 40px;
+}
+
+/* Different font families */
+.font-family-demo {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+
+/* Different font sizes */
+.font-size-demo {
+    font-family: 'Verdana', sans-serif;
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+.medium-text {
+    font-size: 24px;
+}
+
+.large-text {
+    font-size: 36px;
+}
+
+/* Font weight demo */
+.font-weight-demo {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 24px;
+}
+
+.light-weight {
+    font-weight: 300;
+}
+
+.normal-weight {
+    font-weight: 400;
+}
+
+.bold-weight {
+    font-weight: 700;
+}
+
+/* Font style demo */
+.font-style-demo {
+    font-family: 'Times New Roman', serif;
+    font-size: 24px;
+}
+
+.normal-style {
+    font-style: normal;
+}
+
+.italic-style {
+    font-style: italic;
+}
+
+/* Line height demo */
+.line-height-demo {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+}
+
+.tight-line {
+    line-height: 1.2;
+}
+
+.normal-line {
+    line-height: 1.6;
+}
+
+.loose-line {
+    line-height: 2;
+}
+
+/* Text transformation demo */
+.text-transform-demo {
+    font-family: 'Verdana', sans-serif;
+    font-size: 20px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #666;
+}

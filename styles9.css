@@ -1,0 +1,120 @@
+/* Base styles for all screen sizes */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #2ecc71;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    display: none; /* Hidden by default for mobile */
+}
+
+.content {
+    background-color: #e74c3c;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar {
+    background-color: #f39c12;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    display: none; /* Hidden by default for mobile */
+}
+
+footer {
+    background-color: #34495e;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media query for tablet screens (768px and above) */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    nav {
+        display: block; /* Show navigation on tablet and above */
+    }
+
+    .container {
+        flex-direction: row; /* Change layout direction to row on tablet */
+        justify-content: space-between;
+    }
+
+    .content, .sidebar {
+        width: 45%; /* Both content and sidebar take 45% width */
+    }
+}
+
+/* Media query for desktop screens (1024px and above) */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .content, .sidebar {
+        width: 60%; /* Content takes more space */
+    }
+
+    .sidebar {
+        width: 30%; /* Sidebar takes 30% of the space */
+        display: block; /* Sidebar is visible on desktop */
+    }
+
+    footer {
+        padding: 40px; /* More padding for footer on desktop */
+    }
+}
+
+/* Media query for mobile screens (below 768px) */
+@media (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+
+    .content, .sidebar {
+        width: 100%; /* Full-width on mobile */
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}

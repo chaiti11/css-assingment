@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Box Model Demo</title>
+    <link rel="stylesheet" href="styles4.css">
+    
+</head>
+<body>
+
+    <h1>CSS Box Model Demo</h1>
+    <h2>Understanding Padding, Border, and Margin</h2>
+
+    <section>
+        <h3>Content-Box Model (Default)</h3>
+        <p>In the content-box model, the `width` property only includes the content. Padding, border, and margin are added outside of the content width.</p>
+        <div class="box content-box-example">
+            Content-Box Example<br>(Width: 300px)
+        </div>
+    </section>
+
+    <section>
+        <h3>Border-Box Model</h3>
+        <p>In the border-box model, the `width` property includes the content, padding, and border. Padding and border do not add extra width.</p>
+        <div class="box border-box-example">
+            Border-Box Example<br>(Width: 300px)
+        </div>
+    </section>
+
+    <section>
+        <h3>Padding Example</h3>
+        <p>Padding adds space inside the element, between the content and the border.</p>
+        <div class="box padding-demo" style="padding: 40px;">
+            Box with 40px Padding
+        </div>
+    </section>
+
+    <section>
+        <h3>Margin Example</h3>
+        <p>Margin adds space outside the element, separating it from other elements.</p>
+        <div class="box margin-demo" style="margin: 50px 0;">
+            Box with 50px Top and Bottom Margin
+        </div>
+    </section>
+
+    <section>
+        <h3>Border Example</h3>
+        <p>Border surrounds the padding and content, adding a visual boundary.</p>
+        <div class="box border-demo">
+            Box with 10px Border
+        </div>
+    </section>
+
+    <footer>
+        <p style="text-align: center; color: #666;">&copy; 2024 CSS Box Model Demo</p>
+    </footer>
+
+</body>
+</html>

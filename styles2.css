@@ -1,0 +1,64 @@
+ /* Global body styles */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header with solid background color */
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Section with background gradient */
+.gradient-section {
+    background: linear-gradient(45deg, #ff7f50, #6a5acd);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Section with background image */
+.image-section {
+    background-image: url('https://via.placeholder.com/800x400');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Section with repeating background image */
+.repeating-background {
+    background-image: url('https://via.placeholder.com/100');
+    background-repeat: repeat;
+    padding: 40px;
+    color: black;
+}
+
+/* Footer with a different background color */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Links with different color */
+a {
+    color: #3fa1da;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #370ac0;
+}

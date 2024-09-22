@@ -1,0 +1,69 @@
+/* Define CSS variables */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #011a0b;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 24px;
+    --padding-small: 10px;
+    --padding-medium: 15px;
+    --padding-large: 20px;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--padding-large);
+}
+
+h1 {
+    font-size: var(--font-size-large);
+    margin: 0;
+}
+
+h2 {
+    font-size: var(--font-size-medium);
+    margin-top: var(--padding-medium);
+}
+
+main {
+    padding: var(--padding-large);
+}
+
+p {
+    font-size: var(--font-size-small);
+    margin: var(--padding-medium) 0;
+}
+
+.styled-button {
+    background-color: var(--secondary-color);
+    color: rgb(242, 240, 248);
+    border: none;
+    padding: var(--padding-small) var(--padding-medium);
+    font-size: var(--font-size-medium);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.styled-button:hover {
+    background-color: darken(var(--secondary-color), 10%);
+}
+
+footer {
+    padding: var(--padding-medium);
+    background-color: var(--primary-color);
+    color: rgb(243, 240, 240);
+}

@@ -1,0 +1,93 @@
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(238, 250, 223);
+}
+
+header {
+    background-color: #60967c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+/* Overlapping boxes using z-index */
+.box {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    color: white;
+    position: absolute;
+}
+
+.box1 {
+    background-color: red;
+    top: 50px;
+    right: 50px;
+    z-index: 1;
+}
+
+.box2 {
+    background-color: blue;
+    top: 100px;
+    right: 100px;
+    z-index: 2;
+}
+
+.box3 {
+    background-color: green;
+    top: 150px;
+    right: 150px;
+    z-index: 3;
+}
+
+/* Z-Index with positioning examples */
+.relative-box {
+    position: relative;
+    z-index: 5;
+    background-color: purple;
+    width: 200px;
+    height: 100px;
+    color: white;
+    padding: 20px;
+    margin-top: 200px;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 250px;
+    right: 50px;
+    z-index: 4;
+    background-color: orange;
+    width: 200px;
+    height: 100px;
+    color: white;
+    padding: 20px;
+}
+
+.fixed-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 6;
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 80px;
+    padding: 10px;
+    text-align: center;
+}

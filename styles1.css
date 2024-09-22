@@ -1,0 +1,49 @@
+/* Element selector - style all paragraphs */
+p {
+    color: #a12b2b;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Class selector - style elements with class "item" */
+.item {
+    color: rgb(207, 61, 171);
+    font-weight: bold;
+}
+
+/* ID selector - style unique element with id "main-heading" */
+#main-heading {
+    text-align: center;
+    font-size: 2.5em;
+    color: darkred;
+}
+
+/* Attribute selector - style links that open in a new tab */
+a[target="_blank"] {
+    color: green;
+    text-decoration: underline;
+}
+
+/* Pseudo-class selector - style links when hovered */
+a:hover {
+    color: rgb(229, 132, 22);
+}
+
+/* Pseudo-element selector - add content before list items */
+li::before {
+    content: "• ";
+    color: rgb(102, 54, 179);
+}
+
+/* Styling a form input using the attribute selector */
+input[type="email"] {
+    border: 2px solid #cccccc;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Pseudo-class selector - style focused input fields */
+input:focus {
+    border-color: rgb(36, 145, 254);
+    outline: none;
+}

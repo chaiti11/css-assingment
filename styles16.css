@@ -1,0 +1,102 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 20px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Styled Button with Pseudo-Classes */
+.styled-button {
+    background-color: #3498db;
+    color: white;
+}
+
+.styled-button:hover {
+    background-color: #2980b9;
+}
+
+.styled-button:active {
+    background-color: #1c5980;
+}
+
+/* List with Pseudo-Classes */
+.styled-list {
+    list-style: none;
+    padding: 0;
+}
+
+.styled-list li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+}
+
+.styled-list li:hover {
+    background-color: #ecf0f1;
+}
+
+.styled-list li:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Heading with Pseudo-Elements */
+.decorated-heading {
+    position: relative;
+}
+
+.decorated-heading::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #e67e22;
+    top: -10px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.decorated-heading:hover::before {
+    width: 50%;
+}
+
+.decorated-heading::after {
+    
+    position: absolute;
+    font-size: 24px;
+    top: 0;
+    right: -30px;
+    transition: transform 0.5s;
+}
+
+.decorated-heading:hover::after {
+    transform: scale(1.5);
+}

@@ -1,0 +1,96 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+div {
+    margin: 20px auto;
+    padding: 20px;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Color Transition */
+.color-box {
+    background-color: #1abc9c;
+    color: white;
+    transition: color 0.5s ease-in;
+}
+
+.color-box:hover {
+    color: black;
+}
+
+/* Background-Color Transition */
+.bg-box {
+    background-color: #3498db;
+    transition: background-color 1s ease-out;
+}
+
+.bg-box:hover {
+    background-color: #f39c12;
+}
+
+/* Width Transition */
+.width-box {
+    background-color: #e74c3c;
+    transition: width 0.7s cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+
+.width-box:hover {
+    width: 300px;
+}
+
+/* Height Transition */
+.height-box {
+    background-color: #9b59b6;
+    transition: height 0.8s ease-in-out;
+}
+
+.height-box:hover {
+    height: 150px;
+}
+
+/* Combined Transition */
+.combined-box {
+    background-color: #e67e22;
+    width: 200px;
+    height: 100px;
+    transition: background-color 0.5s, width 0.5s ease-in 0.2s, height 0.8s ease-out 0.4s;
+}
+
+.combined-box:hover {
+    background-color: #2ecc71;
+    width: 300px;
+    height: 150px;
+}

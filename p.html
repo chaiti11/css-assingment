@@ -1,0 +1,71 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+.image-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Ensure the image scales responsively */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for larger screens (desktops) */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    img {
+        max-width: 60%; /* Restrict the image width for large screens */
+        margin: 0 auto;
+    }
+}
+
+/* Styles for tablet screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    img {
+        max-width: 80%;
+    }
+}
+
+/* Styles for mobile screens */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    img {
+        max-width: 100%; /* Full width for small screens */
+    }
+}

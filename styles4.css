@@ -1,0 +1,52 @@
+ /* Global body styles */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.box {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Box with content-box model (default) */
+.content-box-example {
+    box-sizing: content-box;
+    width: 300px;
+    border: 5px solid #e74c3c;
+}
+
+/* Box with border-box model */
+.border-box-example {
+    box-sizing: border-box;
+    width: 300px;
+    border: 5px solid #2ecc71;
+}
+
+/* Box padding demo */
+.padding-demo {
+    background-color: #8e44ad;
+}
+
+/* Box margin demo */
+.margin-demo {
+    background-color: #f39c12;
+}
+
+/* Box border demo */
+.border-demo {
+    border: 10px solid #d35400;
+}

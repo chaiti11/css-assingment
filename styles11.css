@@ -1,0 +1,111 @@
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 60px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Fixed navigation bar */
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #444;
+    text-align: center;
+    padding:  10px 0;
+    z-index: 100;
+}
+
+.fixed-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fixed-nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.fixed-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 120px 20px;
+}
+
+/* Section styling */
+section {
+    margin-bottom: 100px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+}
+
+/* Static positioning (default) */
+#static {
+    background-color: #e0f7fa;
+}
+
+/* Relative positioning */
+.relative-box {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: #ffecb3;
+    padding: 10px;
+    border: 1px solid #999;
+}
+
+/* Absolute positioning */
+.relative-container {
+    position: relative;
+    background-color: #e1bee7;
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    background-color: #d1c4e9;
+    padding: 10px;
+    border: 1px solid #999;
+}
+
+/* Fixed positioning */
+.fixed-box {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #ffccbc;
+    padding: 15px;
+    border: 1px solid #999;
+}
+
+/* Sticky positioning */
+.sticky-box {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #c8e6c9;
+    padding: 10px;
+    border: 1px solid #999;
+}
